@@ -2,6 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+
+<!-- Meta Verification -->
+<meta name="facebook-domain-verification" content="kqp3ceig1m15klo9kszxhe5cu0xxxa" />
+
 <title>Pagamento Confirmado</title>
 
 <!-- Meta Pixel Code -->
@@ -31,25 +35,20 @@ body{
     font-family: Arial;
     background: #fff;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 60px;
 }
-
-.botao {
-    display: inline-block;
-    background: #d60000;
-    color: #fff;
-    padding: 18px 32px;
+button {
+    padding: 16px 32px;
     font-size: 22px;
-    font-weight: bold;
-    border-radius: 12px;
-    text-decoration: none;
+    background: #d60000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     margin-top: 25px;
-    transition: 0.2s;
 }
-
-.botao:hover {
-    background: #b30000;
-    transform: scale(1.05);
+button:hover {
+    background: #a10000;
 }
 </style>
 </head>
@@ -58,7 +57,9 @@ body{
 <h2>Pagamento Confirmado!</h2>
 <p>Clique no botão abaixo para entrar no Grupo VIP:</p>
 
-<a href="https://t.me/+XJbSkVdj38BiMmNh" class="botao">Grupo VIP</a>
+<button onclick="window.location.href='https://t.me/+XJbSkVdj38BiMmNh'">
+    Entrar no Grupo VIP
+</button>
 
 </body>
 </html>
