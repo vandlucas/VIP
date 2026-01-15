@@ -21,13 +21,18 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 
 fbq('init', '818826874479120');
 fbq('track', 'PageView');
-fbq('trackCustom', 'PagamentoConfirmado');
 
 /*
- 🔒 CONTROLE DE CONVERSÃO ÚNICA
+ 🔒 PAGAMENTO CONFIRMADO
+ (com valor e moeda)
 */
 if (!localStorage.getItem('pagamento_confirmado_enviado')) {
-    fbq('trackCustom', 'PagamentoConfirmado');
+
+    fbq('trackCustom', 'PagamentoConfirmado', {
+        value: 19.97,
+        currency: 'BRL'
+    });
+
     localStorage.setItem('pagamento_confirmado_enviado', 'true');
 }
 </script>
@@ -62,6 +67,7 @@ button:hover {
 </head>
 
 <body>
+
 <h2>Pagamento Confirmado!</h2>
 <p>Clique no botão abaixo para entrar no Grupo VIP:</p>
 
